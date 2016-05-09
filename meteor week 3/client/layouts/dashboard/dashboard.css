@@ -1,0 +1,43 @@
+.img_dashboard {
+	margin-top: 1em;
+	transform: translateX(calc(100% - 30px));
+}
+
+.img_logout {
+	margin-top: 1em;
+	transform: translateX(calc(100% - -390px));
+	position: absolute;
+	top: 40px;
+}
+
+.img_logout:hover {
+	cursor: pointer;
+}
+
+.chat_border {
+	width: 20em;
+	border: 1px solid black;
+	border-radius: 1em;
+	margin-left: 85px;
+	margin-top: 1em;
+}
+
+.hr_chat {
+    width: 9em;
+    border: 1px solid black;
+    border-radius: 1em;
+    display: block;
+    margin-left: 0em;
+    margin-top: -0.1em;
+}
+
+.li_small {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.container_post:hover {
+	color: #FEBC06;
+	cursor: pointer;
+}

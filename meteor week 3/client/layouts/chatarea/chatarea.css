@@ -1,0 +1,121 @@
+.arrow-left {
+	transform: rotate(183deg);
+	position: absolute;
+	top: 2.7em;
+	left: 28em;
+}
+
+.arrow-left {
+	transform: rotate(183deg);
+	position: absolute;
+	top: 2.7em;
+	left: 28em;
+	cursor: pointer;
+}
+
+/* Messages baloon */
+.message-left, .message-right {
+  margin: 10px 0;
+  overflow: hidden;
+}
+.message-text {
+  padding: 10px 20px;
+  float: right;
+  clear: both;
+  border-radius: 25px;
+  position: relative;
+  margin-bottom: 1px;
+}
+.message-left .message-text {
+  margin-right: 70px;
+  margin-left: 20px;
+  background-color: #e5e5ea;
+  float: left;
+}
+.message-right .message-text {
+  margin-left: 70px;
+  margin-right: 20px;
+  background-color: #36a9fc;
+  color: #fff;
+  float: right;
+  margin-bottom: 1em;
+}
+
+.message-text:last-child:before,
+.message-text:last-child:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 35px;
+  height: 25px;
+  z-index: -1;
+}
+
+.message-right .message-text:before,
+.message-right .message-text:after {
+  border-radius: 0 0 0 50%;
+}
+.message-right .message-text:before {
+  height: 20px;
+  right: -23px;
+  background-color: #36a9fc;
+}
+.message-right .message-text:after {
+  right: -35px;
+  bottom: -3px;
+  background-color: #fff;
+}
+
+
+.message-left .message-text:before,
+.message-left .message-text:after {
+  border-radius: 0 0 50% 0;
+}
+.message-left .message-text:before {
+  height: 20px;
+  left: -23px;
+  background-color: #e5e5ea;
+}
+.message-left .message-text:after {
+  left: -35px;
+  bottom: -3px;
+  background-color: #fff;
+}
+
+
+#send {
+/*	display: inline-block;*/
+  display: flex;
+  flex-direction: row 
+}
+
+
+.send-input {
+	 display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 63%;
+    padding: 1em;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    color: #aaaaaa;
+    border: solid 1px black;
+    background: #f3f3f3;
+    border-radius: 6px;
+} 
+
+.send-btn {
+	display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-radius: 6px;
+  width: 26%;
+  padding: 1em;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: black;
+  border: 1px solid black;
+}
