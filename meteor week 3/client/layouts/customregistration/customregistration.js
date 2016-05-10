@@ -9,7 +9,7 @@ if(Meteor.isClient){
 				email: emailVar,
 				password: passwordVar // enqrips password ivm geinstalleerde packets zie documentatie
 			});
-			Router.go('/login');			
+			Router.go('/dashboard');			
 		}
 	});
 	Template.login.events({

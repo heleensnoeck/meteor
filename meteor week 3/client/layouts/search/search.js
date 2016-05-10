@@ -6,7 +6,7 @@ Template.search.helpers({
 
 
 Template.chat.events({
-	'click .message': function(event){
+	'click .search_chats': function(event){
 		Router.go('/chatarea');
 	}
 });

@@ -14,7 +14,49 @@
 }
 
 /* Messages baloon */
-.message-left, .message-right {
+.phone-containter {
+  width: 100%;
+  height: 100%;
+}
+.phone {
+/*  height: 60%;
+  border: 1px solid black;
+  overflow-y: auto;
+  overflow-x: hidden;*/
+
+  height: 24em;
+  border: 1px solid black;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.button {
+  background-color: none;
+  border: 1px solid #36a9fc;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #36a9fc;
+  display: block;
+  width: 80px;
+  text-align: center;
+  overflow: hidden;
+  text-oveflow: ellipsis;
+  margin: 20px auto;
+}
+
+.build-container {
+  width: 230px;
+  height: 100%;
+  margin-left: 20px;
+  float: right;
+}
+#buildInput {
+  width: 100%;
+  height: 60%;
+}
+
+/* Messages baloon */
+.message {
   margin: 10px 0;
   overflow: hidden;
 }
@@ -26,19 +68,18 @@
   position: relative;
   margin-bottom: 1px;
 }
-.message-left .message-text {
+.message.left .message-text {
   margin-right: 70px;
   margin-left: 20px;
   background-color: #e5e5ea;
   float: left;
 }
-.message-right .message-text {
+.message.right .message-text {
   margin-left: 70px;
   margin-right: 20px;
   background-color: #36a9fc;
   color: #fff;
   float: right;
-  margin-bottom: 1em;
 }
 
 .message-text:last-child:before,
@@ -51,71 +92,64 @@
   z-index: -1;
 }
 
-.message-right .message-text:before,
-.message-right .message-text:after {
+.message.right .message-text:before,
+.message.right .message-text:after {
   border-radius: 0 0 0 50%;
 }
-.message-right .message-text:before {
+.message.right .message-text:before {
   height: 20px;
   right: -23px;
   background-color: #36a9fc;
 }
-.message-right .message-text:after {
+.message.right .message-text:after {
   right: -35px;
   bottom: -3px;
   background-color: #fff;
 }
 
 
-.message-left .message-text:before,
-.message-left .message-text:after {
+.message.left .message-text:before,
+.message.left .message-text:after {
   border-radius: 0 0 50% 0;
 }
-.message-left .message-text:before {
+.message.left .message-text:before {
   height: 20px;
   left: -23px;
   background-color: #e5e5ea;
 }
-.message-left .message-text:after {
+.message.left .message-text:after {
   left: -35px;
   bottom: -3px;
   background-color: #fff;
 }
 
+.send-container {
+}
 
 #send {
-/*	display: inline-block;*/
   display: flex;
   flex-direction: row 
 }
 
-
 .send-input {
-	 display: block;
-    margin: 0 auto;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    width: 63%;
-    padding: 1em;
-    font-size: 0.7em;
-    letter-spacing: 1px;
-    color: #aaaaaa;
-    border: solid 1px black;
-    background: #f3f3f3;
-    border-radius: 6px;
-} 
-
-.send-btn {
-	display: block;
-  margin: 0 auto;
-  margin-top: 1em;
-  margin-bottom: 2em;
-  border-radius: 6px;
-  width: 26%;
-  padding: 1em;
-  font-size: 0.7em;
-  letter-spacing: 1px;
-  color: #fff;
-  background-color: black;
-  border: 1px solid black;
+/*  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+*/background-color: #fff;
+  padding: 5px 5px;
+  font-size: 1em;
+  width: 257%;
+  margin-top: 0;
+  margin-bottom: 0; 
 }
+.send-btn {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: black;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+
+

@@ -7,15 +7,15 @@ Template.chat.helpers({
 });
 
 
-Template.chat.events({
-	'click .message': function(event){
-		Router.go('/login');
-	}
-});
+// Template.chat.events({
+// 	'click .message': function(event){
+// 		Router.go('/login');
+// 	}
+// });
 
 
-Template.chat.events({
-	'click .newUser': function(event){
-		Router.go('/login');
-	}
-});
+// Template.chat.events({
+// 	'click .newUser': function(event){
+// 		Router.go('/login');
+// 	}
+// });
